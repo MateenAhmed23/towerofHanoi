@@ -1,0 +1,134 @@
+body{
+    background-color: #9175af;
+    /* height: 100vh; */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin-top: 1rem;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+}
+
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+#diskNumberDisplay{
+    padding: 0.5rem 2rem;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* Header end */
+
+.container{
+    margin: 0.5rem 2rem;
+    /* margin-top: 0.5rem; */
+}
+
+.grid {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 3rem;
+    padding-bottom: 2rem;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 30rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Styling the tower */
+
+  .tower{
+    font-weight: 100;
+    font-size:large;
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 0.5rem; */
+    align-items: center;
+    justify-content: end;
+    height: 29.5rem;
+    position: absolute;
+    /* top: 1rem;
+    left: 2rem; */
+    z-index: 9;
+    width: 10rem;
+    /* bottom: 0px; */
+    /* padding-bottom: 1rem; */
+  }
+
+  .rod{
+    /* position: relative; */
+    padding: 0.5rem;
+    border-radius: 30px;
+    background-color: darkgray;
+    width: 2rem;
+    cursor: pointer;
+  }
+
+
+
+.hide {
+    display: none;
+}
+
+
+.movesContainer{
+    display: flex;
+    gap: 2rem;
+}
+
+#countdown{
+    /* color: wheat; */
+}
+
+
+#increase, #decrease, #undo, #redo{
+    cursor: pointer;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.disk{
+    height: 100rem;
+    width: 0.5rem;
+    background-color: rgb(159, 75, 75);
+    /* padding-top: 0.5rem; */
+}
+
+.base{
+    height: 0.5rem;
+    width: 10rem;
+    background-color: rgb(80, 80, 233);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+    <script src="https://kit.fontawesome.com/5ee94ebc42.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Towers of Hanoi</h2>
+        <div class="controls">
+            <i class="fa-solid fa-rotate-left" id="undo"></i>
+            <i class="fa-sharp fa-solid fa-arrow-down" id="decrease"></i>
+            <p id="diskNumberDisplay">3</p>
+            <i class="fa-sharp fa-solid fa-arrow-up" id="increase"></i>
+            <i class="fa-solid fa-rotate-right" id="redo"></i>
+        </div>
+        <p>(Disk number between 3 and 9)</p>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <p>Rod - 1</p>
+                <div class="disk"></div>
+                <div class="base"></div>
+                <div class="tower" id="firstTower">
+                    <div class="rod" draggable="false">3</div>
+                    <div class="rod" draggable="false">2</div>
+                    <div class="rod" draggable="true">1</div>
+                </div>
+            </div>
+            <div class="card">
+                <p>Rod - 2</p>
+                <div class="disk"></div>
+                <div class="base"></div>
+                <div class="tower" id="secondTower">
+                </div>
+            </div>
+            <div class="card">
+                <p>Rod - 3</p>
+                <div class="disk"></div>
+                <div class="base"></div>
+                <div class="tower" id="thirdTower">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="movesContainer">
+            <p>Moves Made: </p>
+            <p id="MovesMade">0</p>
+        </div>
+        <div class="timer">
+            <p id="countdown">05:00</p>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
